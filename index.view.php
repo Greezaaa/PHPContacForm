@@ -21,8 +21,8 @@
                 <label for="correo">Correo</label>
             </div>
             <div class="input-content">
-                <input type="text" class="input" id="asunto" name="asunto" value="<?php if (!$enviado && isset($asunto)) echo $asunto; ?>" placeholder="Asunto">
-                <label for="asunto">Asunto</label>
+                <input type="text" class="input" id="subject" name="subject" value="<?php if (!$enviado && isset($subject)) echo $subject; ?>" placeholder="subject">
+                <label for="subject">Asunto</label>
             </div>
 
             <div class="input-content">

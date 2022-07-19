@@ -1,0 +1,175 @@
+@charset "UTF-8";
+body {
+  font-family: sans-serif;
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+  color: inherit;
+  text-decoration: none !important;
+  background: none !important;
+  outline: none;
+}
+
+button,
+button:active,
+input {
+  appearance: none;
+}
+
+button,
+button:active,
+input,
+textarea {
+  outline: none;
+  background: none;
+  border: none;
+  color: inherit;
+}
+
+.form-wrapper {
+  width: 400px;
+  max-width: 100%;
+  margin: 50px auto auto;
+  border: 0.5px solid #f3a007;
+  border-top: 20px solid #f3a007;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0px 0px 20px rgba(51, 51, 51, 0.6);
+  padding: 50px 0;
+  position: relative;
+}
+
+.form-wrapper .input-content {
+  position: relative;
+}
+
+.form-wrapper .input-content > .input {
+  display: block;
+  width: calc(95% - 25px);
+  margin: 0 auto 30px;
+  border-bottom: 2px solid #f3a007;
+  padding-left: 5px;
+  height: 30px;
+  box-shadow: 0 0 6px rgba(51, 51, 51, 0.1);
+}
+
+.form-wrapper .input-content > textarea {
+  resize: vertical;
+  min-width: calc(95% - 25px);
+  min-height: 100px;
+  height: 10px;
+}
+
+.form-wrapper .input-content > .input + label {
+  font-size: 0.8em;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  transform: translateY(0);
+  transform-origin: bottom left;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #5c5c5c;
+  pointer-events: none;
+  transition: all 300ms linear;
+  opacity: 0;
+}
+
+.form-wrapper .input-content > .input::-webkit-input-placeholder {
+  color: #999;
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.form-wrapper .input-content > .input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.form-wrapper .input-content > .input:focus + label {
+  transform: translateY(-25px);
+  opacity: 1;
+}
+
+.form-wrapper .input-content > .input:focus + label {
+  color: #f3a007;
+  outline: none;
+  background: none;
+  border: none;
+  color: inherit;
+}
+
+.form-wrapper .input-content > .input:focus {
+  outline: red;
+  background: none;
+  border: none;
+  color: inherit;
+}
+
+.form-wrapper input[type="checkbox"] {
+  position: relative;
+  appearance: auto;
+  margin: 0 0 20px 20px;
+  width: 15px;
+  height: 15px;
+  background-color: #f3a007;
+}
+
+.form-wrapper input[type="checkbox"]::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: #f3a007;
+  color: #f2f2f2;
+  text-align: center;
+  line-height: 15px;
+}
+
+.form-wrapper input[type="checkbox"]:checked:after {
+  content: "✔";
+}
+
+.form-wrapper .alert {
+  width: 90%;
+  text-align: left;
+  color: #f2f2f2;
+  padding: 25px;
+  margin: 0 auto 10px;
+  box-sizing: border-box;
+}
+
+.form-wrapper .alert.error {
+  border: 2px solid #b82525;
+  background-color: rgba(184, 37, 37, 0.3);
+  color: #b82525;
+}
+
+.form-wrapper .alert.success {
+  border: 2px solid #106814;
+  background-color: rgba(16, 104, 20, 0.5);
+}
+
+.form-wrapper .btn {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  padding: 12px;
+  border: 1px solid #f3a007;
+  background-color: rgba(243, 160, 7, 0.5);
+  color: #333;
+  text-transform: uppercase;
+  transition: 0.3s;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-wrapper .btn:hover {
+  background-color: rgba(243, 160, 7, 0.8);
+  color: #f2f2f2;
+  font-weight: bold;
+}
+/*# sourceMappingURL=form-style.css.map */
